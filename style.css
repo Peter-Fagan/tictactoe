@@ -1,0 +1,121 @@
+
+body {
+  background: gainsboro;
+}
+
+button {
+  width: 155px;
+  height: 155px;
+  background: gainsboro;
+}
+
+.gameBoard {
+  font-size: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.turn {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cross {
+  background-image: url("images/BM X.png");
+}
+.nought {
+  background-image: url("images/NC O.png");
+}
+
+.topRow {
+  text-align: center;
+}
+.middleRow {
+  text-align: center;
+}
+.bottomRow {
+  text-align: center;
+}
+
+#whoseTurn {
+  text-align:center;
+}
+
+#buttonA {
+  border: 5px solid black;
+  border-top: none;
+  border-left: none;
+}
+#buttonB {
+  border: 5px solid black;
+  border-top: none;
+}
+#buttonC {
+  border: 5px solid black;
+  border-top: none;
+  border-right: none;
+}
+#buttonD {
+  border: 5px solid black;
+  border-left: none;
+}
+#buttonE {
+  border: 5px solid black;
+}
+#buttonF {
+  border: 5px solid black;
+  border-right: none;
+}
+#buttonG {
+  border: 5px solid black;
+  border-bottom: none;
+  border-left: none;
+}
+#buttonH {
+  border: 5px solid black;
+  border-bottom: none;
+}
+#buttonJ {
+  border: 5px solid black;
+  border-bottom: none;
+  border-right: none;
+}
+
+#reset {
+	box-shadow: 2px 2px 3px 0 #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color: #ededed;
+	border-radius:15px;
+	border:1px solid #bab1ba;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #ededed;
+}
+#reset:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+#reset:active {
+	position:relative;
+	top:1px;
+}
+#crossWins {
+  color:black;
+  font-family:Arial;
+  font-size:17px;
+  padding:7px 25px;
+  text-decoration:none;
+}
+#noughtWins {
+  color:black;
+  font-family:Arial;
+  font-size:17px;
+  padding:7px 25px;
+  text-decoration:none;
+}

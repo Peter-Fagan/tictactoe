@@ -82,7 +82,11 @@ function startGame () {                         //starts the game
 }
 startGame();
 
-$("#reset").click(function() {                    //when the reset button is clicked
+$("#reset").click(function(e) {                   //when the reset button is clicked
+  if (e.altKey) {                                 //by holding the alt key when you click on the reset button , it will reset stored scores
+  localStorage.setItem ("XWins","0");
+  localStorage.setItem ("OWins","0");
+}
   $(".gameButton").removeClass("cross");          //remove the cross class
   $(".gameButton").removeClass("nought");         //remove the nought class
   $(".gameButton").prop("disabled", false);       //re-enables the game buttons
